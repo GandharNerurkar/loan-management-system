@@ -1,0 +1,24 @@
+{
+  "name": "loan-management-system",
+  "version": "1.0.0",
+  "description": "Full-stack Loan Management System (LMS)",
+  "main": "index.js",
+  "scripts": {
+    "start:client": "npm run dev --prefix client",
+    "start:server": "npm run dev --prefix server",
+    "dev": "concurrently \"npm run start:server\" \"npm run start:client\"",
+    "install:all": "npm install && npm install --prefix client && npm install --prefix server"
+  },
+  "keywords": [
+    "mern",
+    "nextjs",
+    "express",
+    "mongodb",
+    "loan-management"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
